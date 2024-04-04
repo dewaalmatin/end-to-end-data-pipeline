@@ -1,0 +1,23 @@
+What is NoSQL?
+
+NoSQL is a type of database that provides a mechanism for storage and retrieval of data that is modeled in ways other than the tabular relations used in relational databases. Unlike traditional SQL databases which use a structured query language for defining and manipulating data, NoSQL databases can store unstructured data, and they can scale horizontally. They are particularly useful for handling large volumes of data with high velocity and variety, such as big data and real-time web applications.
+
+When to use NoSQL and Relational Database Management System (RDBMS)?
+
+Use NoSQL when you need to handle large sets of unstructured data, require flexible schemas, or if your application needs horizontal scaling and fast, non-transactional queries. On the other hand, use an RDBMS when you need complex queries, transactional reliability, and data integrity enforced by ACID properties. NoSQL is ideal for real-time analytics and big data applications, while RDBMS is suited for traditional enterprise applications requiring structured data storage.
+
+Examples of two NoSQL tools/platforms other than Elasticsearch and their advantages:
+
+MongoDB: A document-oriented NoSQL database, known for its flexibility with schemas and its ability to scale easily. It's great for applications that require rapid development, as it allows developers to store documents in a JSON-like format.
+Apache Cassandra: A highly scalable NoSQL database that excels in handling large amounts of data spread across many commodity servers. It offers high availability with no single point of failure, making it suitable for applications that can't afford to lose data.
+What is Airflow?
+
+Airflow is an open-source platform used to orchestrate complex computational workflows and data processing pipelines. Developed by Airbnb, it allows you to programmatically author, schedule, and monitor workflows using Python. It is highly customizable and integrates with many data sources and services, making it a popular choice for data engineering tasks in varied environments.
+
+What is Great Expectations?
+
+Great Expectations is an open-source Python-based tool that helps data scientists and engineers validate, document, and monitor data quality within their data pipelines. It allows users to define 'expectations' or assertions about their data, which can be used to ensure that incoming data meets these predefined standards, thus maintaining the integrity and reliability of the data in analytical processes and applications.
+
+What is Batch Processing?
+
+Batch processing refers to processing large volumes of data all at once within a specified period. This approach is different from real-time processing as it does not process data immediately as it arrives. Instead, data is collected over a period, and then processed in large, single groups, or "batches". It is commonly used in data processing for banking, payroll, and ETL (extract, transform, load) tasks. Examples of tools include Apache Hadoop for big data processing and Apache Spark for both batch and stream processing. Batch processing is suitable when it's feasible to wait for all data to be collected before processing, such as generating end-of-day reports or monthly statements.

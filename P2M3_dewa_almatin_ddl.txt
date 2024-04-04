@@ -1,0 +1,38 @@
+1. Dataset URL:
+
+https://www.kaggle.com/datasets/bhanupratapbiswas/superstore-sales
+
+2. DDL:
+
+-- Create Database
+CREATE DATABASE airflow_m3;
+
+-- Switch to the database
+USE airflow_m3;
+
+-- Create Table
+CREATE TABLE table_m3 (
+    row_id INT,
+    order_id VARCHAR(255),
+    order_date VARCHAR(50),
+    ship_date VARCHAR(50),
+    ship_mode VARCHAR(50),
+    customer_id VARCHAR(50),
+    customer_name VARCHAR(255),
+    segment VARCHAR(50),
+    country VARCHAR(50),
+    city VARCHAR(50),
+    state VARCHAR(50),
+    postal_code INT,
+    region VARCHAR(50),
+    product_id VARCHAR(50),
+    category VARCHAR(50),
+    sub_category VARCHAR(50),
+    product_name VARCHAR(255),
+    sales FLOAT,
+    PRIMARY KEY (row_id)
+);
+
+3. DML:
+
+COPY table_m3 FROM '/Users/dewaalmatin/Documents/Hacktiv8/Graded Challenge/p2-ftds013-hck-m3-dewaalmatin/P2M3_dewa_almatin_data_raw.csv' DELIMITER ',' CSV HEADER;
